@@ -1,2 +1,2 @@
 # Site Code Dev
-Site desenvolvido em HTML5/CSS3 e Javascript
+Site desenvolvido em HTML5/CSS3
