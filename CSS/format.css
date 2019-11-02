@@ -1,25 +1,76 @@
-.banner
+* {margin: 0; padding: 0;}
+
+.container-principal
 {
-    background: rgb(255, 255, 255);
-    background-size: cover;
-    width: 100%;
+    font-family: verdana; 
+    color:rgb(68, 66, 66);
 }
+
+header
+{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(140, 18, 240);
+    position: relative;
+    top: 0;
+}
+
+.logo
+{
+    position: absolute;
+    width: 300px;
+    height: auto;
+}
+
+.logo img
+{
+    width: 28%;
+    margin-left: 10%;
+}
+
+nav
+{
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+nav ul li
+{
+    float: left;
+    color: rgb(255, 255, 255);
+    width: auto;
+    margin: 0.8em;
+    font-size: 1.5em;
+    font-family: verdana;
+    list-style: none;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover
+{
+    color: rgb(73, 73, 73);
+}
+
+#banner {width: 100%;}
+#banner img {width: 100%; margin-bottom: 0;}
 
 .modalDialog
 {
-    position: relative;
+    position: fixed;
     font-family: verdana;
-    width: 500px;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.671);
-    z-index: 9999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(51, 50, 50, 0.644);
+    z-index: 999;
     opacity: 0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
     display: none;
@@ -28,8 +79,18 @@
 .modalDialog:target
 {
     display: block;
-    pointer-events: auto;
     opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog DIV
+{
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 .modalDialog P
@@ -47,8 +108,8 @@
 
 .close
 {
-    background-color: grey;
-    color: red;
+    background-color: rgb(140, 18, 240);
+    color: black;
     line-height: 25px;
     position: absolute;
     right: -12px;
@@ -57,12 +118,51 @@
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
     border-radius: 12px;
 }
 
 .close:hover
 {
-    background-color: black;
+    background-color: rgb(100, 100, 100);
 }
+
+.color-page
+{
+    background-color: rgb(255, 255, 255);
+}
+
+.img-titulo
+{
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    margin-right: 5%;
+}
+
+.img-titulo IMG
+{
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+#clientes-code {width: 75%; position: relative; float: left;}
+#clientes-code .config-clientes {width: 40%; border: 1px solid #000000; margin-left: 1.5%; padding: 1%; float: left; margin-top: 30px; background-color: rgb(140, 18, 240);}
+#clientes-code .config-clientes IMG {width: 60%; margin-left: 20%; margin-bottom: 20px;}
+#clientes-code .config-clientes P {width: 90%; margin-left: 5%; font-size: 1.2em; margin-bottom: 20px; text-align: center;}
+
+#container-sobre {width: 65%; margin-left: 5%; float: left; position: relative; height: 80%; background-color: rgb(0, 255, 157);}
+#txt-sobre {width: 40%; float: left; position: relative; padding: 5%;}
+#txt-sobre P {width: 100%; position: relative; float: left;}
+#txt-sobre DL {widows: 50%;}
+#img-conteudo-sobre {widows: 45%; position: relative; float: right; padding: 2%;}
+#img-conteudo-sobre IMG {width: 50%}
+
+#txt-contato {width: 100%; height: 100%;}
+#txt-contato FORM {width: 38%; position: relative; float: left; background-color: rgb(0, 255, 157); padding: 2%; top: 5%; min-height: 400px;}
+#txt-contato FORM LABEL {font-weight: bold;}
+#txt-contato FORM INPUT {max-width: 100%; width: 99%; height: 30px; margin-top: 10px; margin-bottom: 15px; border: solid #000000 1px; padding-left: 1%;}
+#txt-contato FORM TEXTAREA {max-width: 100%; width: 99%; border: solid #000000 1px; padding-left: 1%; min-height: 100px;}
+#txt-contato FORM BUTTON {width: 30%; height: auto; cursor: pointer; background-color: rgb(255, 255, 255); color: black; font-size: 1.5em; padding: 15px 0 15px 0; margin-left: 35%; margin-top: 1%;}
